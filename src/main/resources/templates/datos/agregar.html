@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formato</title>
+<link href="/css/Formato.css" rel="stylesheet" type="text/css" />
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/scripts/bootstrap.bundle.min.js"></script>
+<script src="/scripts/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="contenido">
+        <header>
+            <h1>
+                Sitio de visita industrial
+            </h1>
+        </header>
+
+<div class="fs-5">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-75">
+
+
+                <div class="menu">
+
+                    <a th:href="@{/datos/inicio}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-right: 2px;" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg>Inicio
+                    </a>
+
+                    <a th:href="@{/datos/agregar}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" style="margin-right: 2px;" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z" />
+                        </svg>Formato
+                    </a>
+                    <a th:href="@{/datos/listar}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" style="margin-right: 2px ;" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
+                            <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z" />
+                        </svg>Consulta
+                    </a>
+                    <a th:href="@{/datos/ubicacion}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" style="margin-right: 2px;" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>Ubicación Visita
+                    </a>
+                    <a class="nav-link" href="/usuario/salir">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" style="margin-right: 2px;" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                        </svg>Cerrar Sesion
+                    </a>
+                </div>
+            </nav>
+        </div>
+        
+        <div th:if="*{error != null}" 
+						class="alert alert-warning alert-dismissible fade show"
+						role="alert">
+						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+						<h4 th:text=*{error}></h4>
+					</div>
+
+<form action="#" th:action="@{agregar}" th:object="${dato}" method="post">
+
+            
+                    <label for="carrera">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="margin-right: 3px;" class="bi bi-person-workspace" viewBox="0 0 16 16">
+                    <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                    <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z" />
+                </svg>Carrera
+                <select required="required" th:value="*{carrera}" name="carrera" class="form-control">
+                <option>Ninguno</option>
+                <option>Ing.Informatica</option>
+                <option>Ing.Industrial</option>
+                <option>Ing.Industrias Alimentarias</option>
+                <option>Ing.Innvacion Agricola Sustentable</option>
+                <option>Ing.Forestal</option>
+                <option>Ing.Electromecanica</option>
+                <option>Gastronomia</option>
+                <option>Contador Publico</option>
+                </select>
+                    
+                    <br>
+                    
+                    
+                    <label for="Nombre Materia">
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 3px;" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                </svg> Nombre Materia
+            </label>
+                    <input type="text" required="required" th:field="*{materia}" class="form-control" placeholder="materia">
+                  
+                <br>
+
+            
+               <label for="Nombre del Academico">
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 3px;" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                </svg>Nombre del Academico
+            </label>
+                        <input type="text" required="required" th:field="*{nomacad}" class="form-control" placeholder="P.e Esau">
+                    
+                    <br>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 3px;" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            </svg>
+                <label for="sistemareportado" class="form-label">Numero de estudiantes:</label>
+                        <input type="number" required="required" th:field="*{numest}" class="form-control" placeholder="numest">
+                        
+                    <br> 	
+
+            
+            <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 3px;" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
+                <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
+            </svg>
+                <label for="correodestino" class="form-label">Objetivo general de la visita:</label>
+
+                        
+                       <input type="text" required="required" th:field="*{objetivovis}" class="form-control" placeholder="">
+                    
+                 <br>
+
+           
+                <label for="Fecha">
+                <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 3px;" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus-fill" viewBox="0 0 16 16">
+                    <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM8.5 8.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5a.5.5 0 0 1 1 0z" />
+                </svg>Fecha visita:
+            </label>
+                
+                        <input type="date" required="required" th:value="*{fecha}" name="fecha" class="form-control" >
+                    
+                   <br>
+
+            
+            
+            <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 3px;" width="16" height="16" fill="currentColor" class="bi bi-123" viewBox="0 0 16 16">
+                <path d="M2.873 11.297V4.142H1.699L0 5.379v1.137l1.64-1.18h.06v5.961h1.174Zm3.213-5.09v-.063c0-.618.44-1.169 1.196-1.169.676 0 1.174.44 1.174 1.106 0 .624-.42 1.101-.807 1.526L4.99 10.553v.744h4.78v-.99H6.643v-.069L8.41 8.252c.65-.724 1.237-1.332 1.237-2.27C9.646 4.849 8.723 4 7.308 4c-1.573 0-2.36 1.064-2.36 2.15v.057h1.138Zm6.559 1.883h.786c.823 0 1.374.481 1.379 1.179.01.707-.55 1.216-1.421 1.21-.77-.005-1.326-.419-1.379-.953h-1.095c.042 1.053.938 1.918 2.464 1.918 1.478 0 2.642-.839 2.62-2.144-.02-1.143-.922-1.651-1.551-1.714v-.063c.535-.09 1.347-.66 1.326-1.678-.026-1.053-.933-1.855-2.359-1.845-1.5.005-2.317.88-2.348 1.898h1.116c.032-.498.498-.944 1.206-.944.703 0 1.206.435 1.206 1.07.005.64-.504 1.106-1.2 1.106h-.75v.96Z" />
+            </svg>
+                <label for="Evidencia" class="form-label">Semestre:</label>
+                        <input type="number" required="required" th:field="*{semestre}" th:value="*{semestre}" class="form-control" placeholder="semestre">
+                 <br>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 3px;" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+            </svg>
+                <label for="Evidencia" class="form-label">Correo electronico:</label>
+                        <input type="email" required="required" th:field="*{correo}" class="form-control" placeholder="correo">
+                <br>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 3px;" width="16" height="16" fill="currentColor" class="bi bi-clipboard2-fill" viewBox="0 0 16 16">
+                <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5h3Z" />
+                <path d="M3.5 1h.585A1.498 1.498 0 0 0 4 1.5V2a1.5 1.5 0 0 0 1.5 1.5h5A1.5 1.5 0 0 0 12 2v-.5c0-.175-.03-.344-.085-.5h.585A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1Z" />
+            </svg>
+                <label for="Evidencia" class="form-label">Actividades:</label>
+                <textarea rows="10" cols="50" maxlegnth="300" required="required" th:field="*{actividad}" class="form-control"></textarea>
+                        
+                <br>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 3px;" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                < path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+            </svg>
+                <label for="Evidencia" class="form-label">Observaciones:</label>
+                <br>
+                <textarea rows="10" cols="50" maxlegnth="300" required="required" th:field="*{observar}" class="form-control"></textarea>
+                       
+                 <br>
+
+            
+                    <input type="submit" value="Guardar datos" class="btn btn-primary">
+                    <input type="reset" value="Limpiar los campos" class="btn btn-primary">
+                <br>
+            <br> <br>
+</form>
+</div>
+
+ <div>
+            
+            <!-- CSS only -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <!-- JavaScript Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            
+        </div>
+
+</body>
+</html>

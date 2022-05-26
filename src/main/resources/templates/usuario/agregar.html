@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Crear Cuenta</title>
+<link href="/css/login.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/scripts/bootstrap.bundle.min.js"></script>
+<script src="/scripts/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div >
+<center>
+
+
+<form action="#" th:action="@{agregar}" th:object="${usuario}" method="post">
+                    <fieldset>
+                        <legend>Registro de Usuarios.</legend>
+
+                        <label for="Alias" class="form-label">Alias:</label>
+                        <input type="text" required="required" th:field="*{alias}" th:value="*{alias}" class="form-control" placeholder="P.e Gus69">
+                        <br />
+
+                        <label for="Nombre" class="form-label">Nombre Completo:</label>
+                        <input type="text" required="required" th:field="*{nombre}" th:value="*{nombre}" class="form-control" placeholder="P.e Gustavo Luna">
+                        <br />
+                        
+                        <label for="Correo" class="form-label">Correo Electronico:</label>
+                        <input type="email" required="required" th:value="*{correoe}" name="correoe" class="form-control" placeholder="ejemplo@gmail.com">
+                        <br />
+                        
+                        
+                        
+                        <label for="inputPassword5" class="form-label">Password:</label>
+                        <input type="password" required="required" name="clave" class="form-control" aria-describedby="passwordHelpBlock" placeholder="***">
+                        <br> <br>
+
+                        <p style="text-align: center;">
+                            <input type="submit" class=" btn btn-primary" value="Agregar" />
+                            <input type="reset" value="Limpiar" />
+                        </p>
+                    </fieldset>
+                </form>
+                </center>
+                
+                </div>
+
+</body>
+</html>

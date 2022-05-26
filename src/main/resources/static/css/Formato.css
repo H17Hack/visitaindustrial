@@ -1,0 +1,108 @@
+﻿
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+
+body {
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-image: linear-gradient(-25deg, #c9d15b /* #f2f2f2 */ 50%, #a1cf64 /* #f7ba37*/ 50%);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+
+img {
+    border-radius: 7px;
+    margin-left: 860px;
+    margin-bottom: 1px;
+    background-size: cover;
+    width: 25%;
+    height: 100%;
+}
+header {
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    background-image: url(../img/logo2.jpg);
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    /*display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 80px;*/
+}
+
+.contenido {
+    background-color: rgb(231, 221, 102);
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#menu a {
+    font-size: 22px;
+    border-bottom: 2px solid transparent;
+    margin-left: 40px;
+    color: rgb(243, 243, 236);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin-right: 10px;
+    text-decoration: none;
+    background: #afafab /*#9b9b99*/;
+}
+
+.menu a {
+    font-size: 22px;
+    border-bottom: 2px solid transparent;
+    margin-left: 40px;
+    color: rgb(243, 243, 236);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin-right: 10px;
+    text-decoration: none;
+    background: #9b9b99;
+}
+
+    .menu a:hover {
+        border-bottom: 2px solid #8cda28 /*#e48e2c*/;
+        color: #8cda28;
+        background-color: rgb(240, 243, 247);
+    }
+
+.field {
+    outline: none;
+    border: 0px;
+    border: solid 1px #99e438;
+    border-radius: 4px;
+    padding: 2px;
+    margin-left: 0px;
+}
+
+    .field:focus {
+        background-color: #e4f3cf;
+    }
+
+    table{
+        margin-right: 2%;
+        width:auto;
+        height:100%;
+    }
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<link href="/css/login.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/scripts/bootstrap.bundle.min.js"></script>
+<script src="/scripts/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">
+                Inicio de Sesión
+            </h1>
+            <p class="lead">
+                Esta vista es para validar el usuario.
+            </p>
+            <hr class="my-4">
+            <p>
+                Ingresa los datos solicitados*
+            </p>
+            <div>   
+            
+            <div class="row">
+		
+		    <div class="col-md-3"></div>		   
+		    <div class="col-md-6">
+
+<div th:if="${param.error != null and session['SPRING_SECURITY_LAST_EXCEPTION'] != null}" 
+						class="alert alert-warning alert-dismissible fade show"
+						role="alert">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						<h4 th:text="${session['SPRING_SECURITY_LAST_EXCEPTION'].message}"></h4>
+					</div>
+<form action="#" th:action="@{/usuario/validar}" method="post">
+				
+					<label>Correo electronico: </label>
+					<input type="email" required="required" 
+					name="username" class="form-control" />
+					
+					<label>Clave de acceso: </label>
+					<input type="password" required="required" 
+					name="password" class="form-control" />
+					<br> 
+					<p>
+						<input type="submit" value="Validar" class="btn btn-primary" />
+						<input type="reset" value="Limpiar" class="btn btn-primary"/>
+			
+					</p>
+				
+				</form>
+				
+				<div class="form-group">
+					<div class="form-group">
+					<a th:href="@{/usuario/agregar}">No tengo una cuenta, registrarme...</a>
+					</div>
+				</div>
+				
+				</div>
+		    <div class="col-md-3"></div>
+		</div>
+
+            </div>
+            <hr class="my-4">
+            <div>
+                <div class="row">
+                    <div class="col-2"> </div>
+                        <div class="col-8">
+                            <p>Desarrollo Web Avanzado</p>
+                            <p>ITSSNP 2022</p>
+                            <p>Esta pagina fue creada y desarrollada por Esau,Rodrigo y Gustavo.</p>
+                        </div>
+                        <div class="col-2"></div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

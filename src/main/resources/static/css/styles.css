@@ -1,0 +1,149 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+     background-size: cover;
+}
+
+
+img{
+     width: 100%;
+     height: auto;
+    /* width: 550px;
+     height: 30%;*/
+     margin-top: 10px;
+     border-radius: 7px;
+     margin-bottom: 180px;
+     object-fit: contain;
+     background-size: cover;
+
+}
+/*codigo para la plantilla de atras*/
+body {
+     min-height: 100vh;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 20px;
+	font-weight: 400;
+     background-image: linear-gradient(-25deg, #c9d15b/* #f2f2f2 */50%, #a1cf64/* #f7ba37*/ 50%);
+     display: flex;
+     align-items: center;
+     background-size: cover;
+}
+/*Codigo donde almacena la infromación princiapl*/
+.contenedor {
+	background-color: rgb(231, 221, 102);
+	width: 90%;
+	max-width: 1200px;
+	margin: 40px auto;
+	padding: 40px;
+	border-radius: 10px;
+}
+
+header {
+	display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin-bottom: 80px;
+}
+/*codigo para el titulo*/
+.logo {
+	font-size: 45px;
+     font-weight: 600;
+     color: rgb(110, 108, 106);
+	text-decoration: none;
+     font-family: 'Segoe UI';
+     
+
+
+    /*display: inline-block;
+     padding: 10px 30px;
+	border-radius: 100px;
+     margin-right: 10px;
+     text-decoration: none;
+     background: #e9db8a;*/
+}
+/*codigo de posicionamiento del menu*/
+.menu  {
+	display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+/*SON LAS LETRAS DE inicio contacto etc*/
+.menu a {
+	font-size: 22px;
+     border-bottom: 2px solid transparent;
+     margin-left: 40px;
+     color: rgb(243, 243, 236);
+	text-decoration: none;
+	transition: all 0.3s ease;
+
+    display: inline-block;
+     padding: 10px 20px;
+	border-radius: 100px;
+     margin-right: 10px;
+     text-decoration: none;
+     background: #9b9b99;
+
+}
+/*Codigo para desplazar en la parte del menu color */
+.menu a:hover {
+	border-bottom: 2px solid #8cda28/*#e48e2c*/;
+     color:#8cda28;
+     background-color: rgb(240, 243, 247);
+}
+
+main {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+}
+
+main .contenedor-img {
+     max-width: 60%;
+     margin-right: 40px;
+}
+
+.contenedor-texto .titulo {
+     font-size: 50px;
+     font-weight: normal;
+     margin-bottom: 40px;
+}
+
+.contenedor-texto .mascota {
+     font-weight: bold;
+     color: #ccc0c0;
+     font-style: normal;
+}
+
+.contenedor-texto p {
+     margin-bottom: 40px;
+     line-height: 36px;
+}
+/*codigo para el boton de conocenos*/
+.btn-link {
+     display: inline-block;
+     padding: 10px 30px;
+	border-radius: 100px;
+     margin-right: 10px;
+     text-decoration: none;
+     background: #f1c42f;
+}
+/*son para los botones de reserva ahora y conocenos*/
+footer{
+     font-family: Georgia;
+     font-size: 12px;
+     text-align: center;
+ }
+
+@media screen and (max-width: 915px) {
+     main {
+          flex-direction: column;
+          text-align: center;
+     }
+
+     main .contenedor-img {
+          margin-bottom: 40px;
+     }
+}

@@ -1,0 +1,42 @@
+#menu a
+     {
+        font-size: 22px;
+      border-bottom: 2px solid transparent;
+      margin-left: 40px; color: rgb(243, 243, 236);
+      text-decoration: none; transition: all 0.3s ease;
+      display: inline-block; padding: 10px 20px;
+      border-radius: 100px; margin-right: 10px;
+      text-decoration: none; background: #afafab /*#9b9b99*/; }
+
+.menu a {
+    font-size: 22px;
+    border-bottom: 2px solid transparent;
+    margin-left: 40px; color: rgb(243, 243, 236);
+    text-decoration: none; transition: all 0.3s ease;
+    display: inline-block; padding: 10px 20px; border-radius: 100px;
+    margin-right: 10px; text-decoration: none; background: #9b9b99; }
+
+.menu a:hover {
+    border-bottom: 2px solid #8cda28 /*#e48e2c*/;
+    color: #8cda28; background-color: rgb(240, 243, 247); }
+
+.field {
+    outline: none;
+    border: 0px; border: solid 1px #99e438;
+    border-radius: 4px; padding: 2px; margin-left: 0px; }
+
+    .field:focus {
+        background-color: #e4f3cf; }
+
+#boton { display: inline-block;
+         padding: 10px 30px;
+         border-radius: 100px;
+         margin-right: 10px; font-size: 22px;
+         border-bottom: 2px solid transparent;
+         margin-left: 40px; color: rgb(243, 243, 236);
+         background-color: #9b9b99; }
+
+    /*son para los botones de reserva ahora y conocenos*/
+    #boton:hover {
+        border-bottom: 2px solid #8cda28 /*#e48e2c*/;
+        color: #8cda28; background-color: rgb(240, 243, 247); }
